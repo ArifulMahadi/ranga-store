@@ -6,8 +6,8 @@ const loadProducts = () => {
 
 // show all product in UI 
 const showProducts = (products) => {
-  // const allProducts = products.map((pd) => pd);
-  for (const product of products) {
+  const allProducts = products.map((pd) => pd);
+  for (const product of allProducts) {
     const image = product.images;
     const div = document.createElement("div");
     div.classList.add("product");
